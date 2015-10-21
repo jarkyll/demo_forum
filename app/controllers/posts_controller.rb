@@ -2,8 +2,9 @@ class PostsController < ApplicationController
   before_action :find_post, only:[:show, :edit, :update, :destroy]
   # do th find post method only for those methods
 
-
+  #show all the posts
   def index
+    @posts = Post.all.order("created_at DESC")
   end
 
   # user arrives at this page
