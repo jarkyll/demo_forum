@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+#authentication support
+gem 'devise', '~> 3.5', '>= 3.5.2'
 #like the name says
 gem 'simple_form', '~> 3.2'
 # Layer on top of HTML/XML express HTML with idention rather than closing tags
