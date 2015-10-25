@@ -1,0 +1,20 @@
+!!!
+<!- yield signals where the view will be at ->
+%html
+%head
+  %title Mobile-Friendly Forum
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+%body
+  %header.main_header
+    #logo
+      %p Mobile-Friendly Forum
+    #buttons
+      = link_to "New Post", new_post_path
+  .container
+    %p.notice= notice
+    %p.alert= alert
+
+  .container
+    = yield
