@@ -6,6 +6,18 @@ Currently, there is minimal CSS
 
 Ruby version 2.1.5p273
 
+Current problems/addons:
+  lack of front-end
+  blank comments and posts
+  add nested comments
+  add support for pictures
+  check titles for key phrases(deeming them NSFW or not)
+  Blog Spam prevention
+  **add feature for sub threads
+  add feature for private messaging
+  people register with a username too
+
+all of the features can come together to build a side app
 
 Deployment instructions
 
