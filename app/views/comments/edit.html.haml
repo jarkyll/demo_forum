@@ -1,0 +1,10 @@
+%h1 Edit Comment
+
+
+= simple_form_for([@post, @comment]) do |f|
+  = f.input :comment
+  = f.submit
+= link_to 'Cancel', post_path(@post)
+-# you don't want the build because it will build a new comment
+-# this @post.comments.build will say to build the comment for the post
+  
