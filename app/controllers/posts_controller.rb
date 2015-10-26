@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
   before_action :find_post, only:[:show, :edit, :update, :destroy]
   # do th find post method only for those methods
+  before_action :authenticate_user!, except: [:index, :show]
+  # what this is doing, routes you to the login page before you can
+  # create a post. The only places you can go is show and index
+  # otherwise you have to login
 
   #show all the posts
   def index
