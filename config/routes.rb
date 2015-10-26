@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
+  #for the comments
 
-   # goes to the post controller and does the index action  
+   # goes to the post controller and does the index action
   root 'posts#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
