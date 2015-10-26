@@ -1,28 +1,15 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a working Mobile-Friendly Rails Forum
 
-Things you may want to cover:
+Currently, there is minimal CSS
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ruby version 2.1.5p273
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Deployment instructions
+
+To deploy make to rake db:migrate and then rails s to start the server
+There should not be many issues
+
+Front-end Development Soon(tm)
